@@ -1,0 +1,11 @@
+<!-- Runs the multirobot_tracker node -->
+
+<launch>
+
+	<node pkg="multirobot_tracker" type="multirobot_tracker" name="multirobot_tracker" output="screen">
+        <param name="periode_relax" value="4.0"/>
+        <param name="periode_start" value="0.2"/>
+        <param name="topics2seach" value="base_scan,odom"/>
+    </node>
+
+</launch>
